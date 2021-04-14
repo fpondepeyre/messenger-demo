@@ -4,20 +4,22 @@ namespace App\Message;
 
 final class SubscriptionMessage
 {
-    /*
-     * Add whatever properties & methods you need to hold the
-     * data for this message class.
-     */
+     private $email;
+     private $newsletterId;
 
-//     private $name;
-//
-//     public function __construct(string $name)
-//     {
-//         $this->name = $name;
-//     }
-//
-//    public function getName(): string
-//    {
-//        return $this->name;
-//    }
+     public function __construct(string $email, int $newsletterId)
+     {
+         $this->email = $email;
+         $this->newsletterId = $newsletterId;
+     }
+
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    public function getNewsletterId(): int
+    {
+        return $this->newsletterId;
+    }
 }

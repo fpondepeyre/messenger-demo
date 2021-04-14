@@ -9,6 +9,6 @@ final class SubscriptionMessageHandler implements MessageHandlerInterface
 {
     public function __invoke(SubscriptionMessage $message)
     {
-        // do something with your message
+        dump($message);
     }
 }
